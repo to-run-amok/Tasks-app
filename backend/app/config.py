@@ -6,19 +6,19 @@ import pyrebase
 
 load_dotenv()
 
-# Path to service account JSON file for firebase-admin (set this env var)
+
 SERVICE_ACCOUNT_PATH = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
 if not SERVICE_ACCOUNT_PATH:
     raise RuntimeError("Please set GOOGLE_APPLICATION_CREDENTIALS to the path of your service account JSON")
 
-# Initialize Firebase Admin SDK (for server-side operations)
+
 cred = credentials.Certificate(SERVICE_ACCOUNT_PATH)
 if not firebase_admin._apps:
     firebase_admin.initialize_app(cred)
 
 db = firestore.client()
 
-# pyrebase config (used for email/password sign-in on the server side)
+
 pyrebase_config = {
     "apiKey": os.getenv("FIREBASE_API_KEY"),
     "authDomain": os.getenv("FIREBASE_AUTH_DOMAIN"),
@@ -29,7 +29,7 @@ pyrebase_config = {
     "appId": os.getenv("FIREBASE_APP_ID"),
 }
 
-# Initialize pyrebase only if config values exist
+
 if not pyrebase_config["apiKey"]:
     firebase = None
 else:

@@ -2,7 +2,7 @@ from firebase_admin import auth as admin_auth
 from fastapi import HTTPException, status, Depends
 from fastapi.security import OAuth2PasswordBearer
 
-# FastAPI dependency to extract bearer token
+
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/token")
 
 async def get_current_user(token: str = Depends(oauth2_scheme)):

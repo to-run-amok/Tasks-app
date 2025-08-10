@@ -34,12 +34,10 @@ class Loginschema(BaseModel):
             }
 
 
-
-# ToDo schemas
 class ToDoCreate(BaseModel):
     task: str
     completed: bool = False
-    timestamp: Optional[str] = None  # ISO 8601 timestamp string
+    timestamp: Optional[str] = None
 
 class ToDoUpdate(BaseModel):
     task: Optional[str] = None

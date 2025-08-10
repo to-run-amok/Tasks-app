@@ -12,7 +12,7 @@ dist
 dist-ssr
 *.local
 
-# Editor directories and files
+#directories
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -23,16 +23,17 @@ dist-ssr
 *.sln
 *.sw?
 
-# Dependencies
+#Dependencies
 node_modules/
 
-# Build
+
 dist/
 
-# Env
+
 .env
 
 # OS files
 .DS_Store
 Thumbs.db
 
+package-lock.json/

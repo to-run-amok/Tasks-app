@@ -1,23 +1,23 @@
-# Python virtual environment
+#virtualen
 .venv/
 
-# Node dependencies
+#node_dependencies
 node_modules/
 
-# Environment files & secrets
+#keys
 .env
 serviceAccountKey.json
 
-# Python cache
+#cache
 __pycache__/
 *.pyc
 *.pyo
 
-# Build files
+#builds
 dist/
 build/
 
-# OS / Editor files
+#os
 .DS_Store
 Thumbs.db
 .vscode/
