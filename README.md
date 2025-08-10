@@ -38,9 +38,3 @@ The UI is responsive, minimal, and mobile-friendly, featuring timestamps, comple
 
 ---
 
-## 📦 Installation
-
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/YOUR-USERNAME/todo-app.git
-cd todo-app
