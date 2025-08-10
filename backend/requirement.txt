@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+firebase-admin
+pyrebase4
+python-dotenv
+pydantic
+requests
+setuptools
+firestore
